@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片标签</title>
+</head>
+<body>
+
+<!--
+    图片标签：<img>,属性：src为路径（可以相对或者绝对）
+                  相对路径：访问站内资源时使用=图片和页面同级目录：直接写图片名
+                          图片在页面的上级目录：../图片名
+                          图片在页面的下级目录：文件夹名/图片名
+                  绝对路径：访问站外资源使用(直接复制图片地址，放置在src内)，也称为图片盗链
+                          好处可以节省自己网站资源，坏处有可能找不到图片
+                  属性：title为鼠标悬停到某处时显示内容
+                  属性：alt为当图片不能正常显示时要显示的内容
+                  属性：width为宽，height为高
+                       两种方式：像素、百分比(单独设备一个宽或者高时，其次对应的那个会等比例自动缩放)
+-->
+
+    <img src="baidu.jpg" title="这是百度log图" alt="">
+    <img src="../小丑.jpg" width="50%" alt="">
+    <img src="../小丑（hh）.jpg" alt="此图片不存在">
+    <img src="aaa/meiya.jpg" width="200" height="200" alt="">
+    <img src="http://cdn.tmooc.cn/bsfile//courseImg///06207cb9c5b84e1f910e8b61fd50b080.png" alt="">
+
+</body>
+</html>
