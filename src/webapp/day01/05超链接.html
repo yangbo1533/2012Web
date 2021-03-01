@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接</title>
+</head>
+<body>
+
+<!--
+    超链接标签：<a></a>,属性href为超链接指向的路径（可以为站内资源，也可以站外资源）
+        如果href指向文件路径后浏览器不支持浏览时，则自动触发下载
+        图片超链接：<a><img></a>
+        页面内部跳转：属性：<a href=“top”></a>
+                        <a href=“#top”></a> 为回到顶部
+-->
+
+    <a href="http://www.baidu.com">超链接1</a>
+    <a href="03简历练习.html">超链接2</a>
+    <a href="meiya.jpg">超链接3</a>
+    <a href="此处存在文件路径">超链接4</a>
+    <a href="http://baidu.com"><img src="baidu.jpg" alt=""></a>
+
+    <img id="top-panel" src="baidu.jpg" alt="">
+    <img src="../小丑.jpg" alt="">
+    <a href="#top-panel">回到顶部</a>
+
+</body>
+</html>
