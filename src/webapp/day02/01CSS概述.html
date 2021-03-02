@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        /*通过选择器选择到标签后，添加样式*/
+        /*标签名选择器：选取页面中说所有重名的标签*/
+        h2{color: blue}
+    </style>
+
+    <!--引入外部css样式文件-->
+    <link rel="stylesheet" href="my.css">
+    <!--引入外部css样式文件-->
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+
+<!--
+    CSS概述：Cascading Style Sheet 是层叠样式表，作用用于美化html页面
+    如何在html页面上添加样式代码？
+    三种方式：
+        内联：内联样式：在标签内部的style属性中写样式代码
+        内部：在head标签里面添加style标签，在标签内通过选择器选择到元素给元素添加样式，能复用但只能当前页面使用
+        外部：在单独的css样式文件中写样式代码，在HTML页面中通过link标签引入，可以实现多页面复用
+        *工作中外部样式使用最多，可以实现多页面复用，并且css代码和HTML代码分离开便于改动
+    优先级：内联优先级最高，内部和外部相同，后面覆盖前面的
+-->
+
+<h2>内部测试1</h2>
+<h2>内部测试2</h2>
+<h3>外部测试1</h3>
+<h3>外部测试1</h3>
+<h1 style="color: #ff0000">内联测试1</h1>
+<h1 style="color: red">内联测试2</h1>
+
+</body>
+</html>

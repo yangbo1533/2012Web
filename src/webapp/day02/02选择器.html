@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        /*id选择器*/
+        #d1{ color: red }
+        /*类选择器*/
+        .c1{ color: brown }
+        /*分组选择器*/
+        #d1,.c1,h3{ background-color: darkgray }
+        /*任意元素选择器*/
+        *{ /*边框    粗细 样式  颜色*/
+            border: 1px solid red;
+        }
+        /*属性选择器*/
+        input[type='text']{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    选择器：1、标签名选择器格式：标签名（样式代码）选取页面中所有同名标签
+           2、id选择器格式：#d1{样式代码} 选取页面中某一个元素时使用
+           3、类选择器格式：class{样式代码} 选择多个不相关的元素时使用
+           4、分组选择器格式：#d1,c1,h3{背景颜色样式代码}
+           5、任意元素选择器
+           6、属性选择器
+-->
+
+<input type="text"> <input type="password">
+<div id="d1">div1</div>
+<div>div2</div>
+<div class="c1">div3</div>
+<span>span1</span>
+<span>span2</span>
+<span class="c1">span3</span>
+<h3>hahah</h3>
+
+</body>
+</html>
