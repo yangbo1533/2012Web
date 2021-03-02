@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>颜色和背景</title>
+
+    <style>
+        h1{
+            /*color:red*/  /*颜色单词*/
+            /*color:#ff0000*/  /*6位16进制*/
+            /*color:#0f0*/  /*3位16进制*/
+            /*color:rgb(0,0,255)*/  /*3位10进制*/
+            color: rgba(255,0,0,0.3);  /*4位10禁止*/
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /*设置背景图片*/
+            background-image: url("../小丑.jpg");
+            /*设置背景图片尺寸*/
+            background-size: 100px 100px;
+            /*禁止重复*/
+            background-repeat: no-repeat;
+            /*设置背景图片位置*/
+            /*background-position: 50px 50px;*/
+            /*通过横向纵向百分比赋值*/
+            background-position: 200% 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    颜色赋值：三原色rgb：红、绿、蓝  取值范围 0-255
+            赋值方式：颜色单词赋值：red/yellow/blue/pink...
+                    6位16进制赋值：#ff0000  每两位表示一个数值
+                    3位16进制赋值：#f00  等效ff0000
+                    3位10进制赋值：rgb（255,0,0）
+                    4位10进制赋值：rgba（255,0,0,0-1） 其中a表示透明度，值越小越透明
+-->
+
+<div></div>
+<h1>颜色测试</h1>
+
+</body>
+</html>

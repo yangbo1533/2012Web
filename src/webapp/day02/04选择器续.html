@@ -8,6 +8,11 @@
         body div div span{ color: red}  /*3,4,5*/
         /*子元素选择器*/
         body>div>div>span{ color: pink}  /*3,4*/
+        /*伪类选择器*/
+        a:link{ color: red }  /*未访问过状态*/
+        a:visited{ color: yellow }  /*访问过状态*/
+        a:hover{ color: blue }  /*悬停状态*/
+        a:active{ color: purple }  /*点击状态*/
     </style>
 </head>
 <body>
@@ -15,8 +20,12 @@
 <!--
     子孙后代选择器：(匹配div里面的所有包含的子孙后代)格式：div div span(样式代码)
     子元素选择器：（匹配div里面的所有不包含子孙后代）格式：div>div>span(样式代码)
+    伪类选择器：选择的是元素的状态，分为未访问状态、访问过状态、悬停状态、点击状态
 -->
 
+<a href="../小丑.jpg">超链接1</a>
+<a href="../小丑.jpg">超链接2</a>
+<a href="../小丑.jpg">超链接3</a><br>
 <span>s1</span>
 <div>
     <span>s2</span>

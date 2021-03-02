@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        span{
+            /*行内元素不可以修改宽和高*/
+            width: 100px;
+            height: 100px;
+            display: block;  /*如果必须更改宽和高，需要修改显示方式为块级或者是行内块*/
+            border: 1px solid blue;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        a{
+            background-color: red;
+            width: 100px;
+            height: 50px;
+            display: block;  /*修改超链接宽和高*/
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    元素显示方式：block  块级元素，特点：独占一行，可以修改宽和高，如h1-h6，p，div
+               inline  行内元素，特点：共占一行，不能修改宽和高，如span，b，i
+               inline-block  行内块元素，特点是共占一行，可以修改宽和高，如img，input等
+-->
+
+<a href="">超链接</a>
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
+<span>span1</span> <span>span2</span> <span>span3</span>
+<img src="../小丑.jpg" alt="">
+<img src="../小丑.jpg" alt="">
+<img src="../小丑.jpg" alt="">
+
+</body>
+</html>
