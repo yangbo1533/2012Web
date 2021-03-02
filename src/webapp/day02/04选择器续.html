@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*子孙后代选择器*/
+        body div div span{ color: red}  /*3,4,5*/
+        /*子元素选择器*/
+        body>div>div>span{ color: pink}  /*3,4*/
+    </style>
+</head>
+<body>
+
+<!--
+    子孙后代选择器：(包含子孙后代)格式：div div span(样式代码)
+    子元素选择器：（不包含子孙后代）格式：div>div>span(样式代码)
+-->
+
+<span>s1</span>
+<div>
+    <span>s2</span>
+    <div><span>s3</span></div>
+    <div>
+        <span>s4</span>
+        <div><span>s5</span></div>
+    </div>
+</div>
+
+</body>
+</html>
