@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style>
+        /*div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        #d1{
+            !*margin-bottom: 100px;
+            margin-right: 100px;*!
+            !*margin: 50px;*!
+            !*margin: 0 auto;*!
+            !*margin: 10px 20px 30px 40px;*!
+        }
+        #d2{
+            margin-top: 50px;
+        }
+        span{
+            border: 1px solid blue;
+        }
+        #s1{
+            margin-top: 50px;
+        }*/
+
+        body>div{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            overflow: hidden;
+        }
+        div>div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin-left: 50px;
+            margin-top: 50px;
+            /*如果元素上边缘和上级元素上边缘重叠，给元素添加上边距会出现粘连问题
+              给上级元素添加overflow：hidden解决*/
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    左右相邻彼此添加外边距时，外边距相加
+    上下相邻彼此添加外边距时，外边距取最大值
+-->
+
+<!--<span id="s1">span1</span> <span id="s2">span2</span>
+<div id="d1"></div>
+<div id="d2"></div>-->
+
+<div>
+    <div>
+
+    </div>
+</div>
+
+</body>
+</html>
