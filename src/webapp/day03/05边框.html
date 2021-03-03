@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border-top: 1px solid red;
+            border: 5px double green;
+            /*圆角*/
+            border-radius: 200px;
+            /*内边距*/
+            padding-left: 50px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!--                  左    右     上    下    像素  实线  颜色
+    边框赋值方式：boder-left、right、top、bottom：1px solid red;
+               border: 5px double green; 四方位添加边框写法
+    圆角：值越大越圆，当值超过宽高的一半时为正圆
+    内边距：元素边缘距内容的距离,内边距会影响元素的宽高
+        赋值方式：类似于外边距
+            padding-left、right、top、bottom  单独某个方向赋值
+            padding：10px  四个方向赋值
+            padding：10px 20px  上下、左右赋值
+-->
+
+<div>测试边框</div>
+
+</body>
+</html>
