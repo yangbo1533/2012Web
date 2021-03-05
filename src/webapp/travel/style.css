@@ -1,49 +1,93 @@
-/*总div大框*/
 body{
-    width: 100%;
-    margin: 0 auto;
+    margin: 0px;
 }
-/*景点概述*/
-.a{
-    width: 1140%;
-    height: 50px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 40px 0 40px 0;
-    background-color: #e8e8e8;
-    margin-top: 5px;
-}
-#p{
-    color: #62B5Ec;
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 22px;
-}
-#p1{
+/*正文头部*/
+#content_top{
     margin: auto;
-    color: #62B5Ec;
-    font-size: 15px;
+    width: 90%;
+    background-color: lightgray;
 }
-.b_left{
-    width: 385px;
-    height: 270px;
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
+/*内部字*/
+#content_top_p1{
+    font-size: 25px;
+    color: lightslategray;
+    margin-left: 30px;
+    padding: 18px 0 0 80px;
+}
+#content_top_p2{
+    font-size: 17px;
+    color: lightslategray;
+    margin-left: 30px;
+    padding: 0 0 18px 80px;
+}
+/*正文中间部分文字和图片*/
+.content_con_d{
+    margin: 8px auto;
+    overflow: hidden;
+    width: 76%;
+}
+/*左侧文字*/
+.content_con_d_left{
+    width: 440px;
+    height: 210px;
     float: left;
+    margin-right: 20px;
     text-align: center;
+    margin-top: 5px;
+    background-color: floralwhite;
+    padding: 30px;
 }
-.b_left>a{
-    width: 385px;
-    height: 24px;
+.content_con_d_left a{
+    color: sandybrown;
     font-size: 20px;
-    margin-bottom: 25px;
-    line-height: 20px;
-    font-weight: normal;
+    list-style-type: none;
+    text-decoration: none;
 }
-.b_right img{
-    width: 380px;
-    height: 270px;
-    margin: 0 10px 10px 0;
+.content_con_d_left p{
+    color: lightslategrey;
+    padding: 0 20px 0 20px;
+}
+/*右侧三个图片*/
+.content_con_d_right{
+    width: 610px;
+    float: left;
+    overflow: hidden;
+}
+/*大图*/
+.content_con_d_right_l{
+    width: 385px;
+    float: left;
+    margin-right: 5px;
+}
+/*两小图*/
+.content_con_d_right_r{
+    width: 210px;
     float: left;
 }
+.content_con_d_right_r_1{
+    margin-bottom: 5px;
+}
+/*正文下部分(图片)*/
+#content_bottom{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*右侧大图*/
+.content_bottom_left{
+    width: 550px;
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+}
+/*左侧整体加四个小图*/
+.content_bottom_right{
+    width: 600px;
+    float: left;
+}
+.content_bottom_right_1{
+    width: 295px;
+    margin: 5px;
+    float: left;
+}
+
