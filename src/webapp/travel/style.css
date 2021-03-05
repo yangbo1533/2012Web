@@ -1,25 +1,28 @@
-body div{
+/*总div大框*/
+body{
     width: 100%;
     margin: 0 auto;
 }
+/*景点概述*/
 .a{
     width: 1140%;
-    height: 71px;
+    height: 50px;
     font-size: 16px;
     line-height: 24px;
     padding: 40px 0 40px 0;
     background-color: #e8e8e8;
+    margin-top: 5px;
 }
-#top{
+#p{
     color: #62B5Ec;
     font-size: 30px;
     font-weight: normal;
     line-height: 22px;
 }
-#bottom{
+#p1{
     margin: auto;
     color: #62B5Ec;
-    font-size: 20px;
+    font-size: 15px;
 }
 .b_left{
     width: 385px;
@@ -28,6 +31,7 @@ body div{
     vertical-align: middle;
     position: relative;
     float: left;
+    text-align: center;
 }
 .b_left>a{
     width: 385px;
