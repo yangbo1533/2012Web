@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" value="一" onclick="myfn(1)">
+<input type="button" value="二" onclick="myfn(2)">
+<div id="d1"></div>
+
+<script>
+    function myfn(x) {
+        //三目写法
+        let imgName = x==1?"../meinv.jpg":"../小丑.jpg";
+        di.innerHTML += "<img src='"+imgName+"'>";
+
+        // switch (x) {
+        //     case 1: d1.innerHTML = "<img src='../meinv.jpg'>"
+        //         break;
+        //     case 2: d1.innerHTML = "<img src='../小丑.jpg'>"
+        //         break
+        // }
+    }
+</script>
+</body>
+</html>

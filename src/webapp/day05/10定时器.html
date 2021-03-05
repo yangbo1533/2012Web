@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    //开启定时器方式
+    //此处方法不需要写括号，因为是作为参数进行传递，如果调用时必须写括号
+    setInterval(myfn,2000);
+
+    function myfn() {
+        //类似于在控制台输出语句
+        console.log("正在执行")
+    }
+
+    //第二种写法（匿名写法）
+    let num = 0;
+    let stop = setInterval(function () {
+        console.log(num++);
+        if (num==5){
+            //停止定时器
+            clearInterval(stop)
+        }
+    },1000); //每隔一秒钟加一个数
+</script>
+</body>
+</html>

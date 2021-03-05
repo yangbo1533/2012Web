@@ -1,0 +1,45 @@
+body div{
+    width: 100%;
+    margin: 0 auto;
+}
+.a{
+    width: 1140%;
+    height: 71px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 40px 0 40px 0;
+    background-color: #e8e8e8;
+}
+#top{
+    color: #62B5Ec;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 22px;
+}
+#bottom{
+    margin: auto;
+    color: #62B5Ec;
+    font-size: 20px;
+}
+.b_left{
+    width: 385px;
+    height: 270px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+}
+.b_left>a{
+    width: 385px;
+    height: 24px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.b_right img{
+    width: 380px;
+    height: 270px;
+    margin: 0 10px 10px 0;
+    float: left;
+}

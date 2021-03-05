@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="i1">
+<input type="button" value="按钮">
+<div id="d1">卡哇伊</div>
+
+<script>
+    function myfn() {
+        //得到文本框和div
+        let i = document.getElementById("i1");
+        let d = document.getElementById("d1");
+        //取出文本框的值给到div显示
+        d.innerText = i.value;
+    }
+</script>
+</body>
+</html>
