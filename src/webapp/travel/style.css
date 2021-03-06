@@ -1,25 +1,24 @@
-body{
-    margin: 0 auto;
-}
+/*body{*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*整个正文盒子*/
 #content{
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 /*正文头部*/
 #content_top{
-    margin: auto;
-    width: 90%;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 150px;
     float: left;
     overflow: hidden;
 }
 /*内部字*/
 #content_top_p1{
     font-size: 25px;
-    color: lightslategray;
-    margin-left: 20px;
-    padding: 8px 0 0 80px;
+    color: coral;
+    margin-left: 80px;
 }
 #content_top_p2{
     font-size: 17px;
@@ -27,12 +26,16 @@ body{
     margin-left: 30px;
     padding: 0 0 18px 80px;
 }
+/*正文中间部位*/
+.content_con{
+    margin-left: 230px;
+    float: left;
+    overflow: hidden;
+}
 /*正文中间部分文字和图片*/
 .content_con_d{
-    float: left;
-    margin: 5px auto;
     overflow: hidden;
-    width: 75%;
+    float: left;
 }
 /*左侧文字*/
 .content_con_d_left{
@@ -72,20 +75,18 @@ body{
     float: left;
 }
 .content_con_d_right_r_1{
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 /*正文下文字*/
 #content_con_w{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin-left: 150px;
     float: left;
-    overflow: hidden;
 }
 .content_con_w_1{
     color: coral;
-    margin: 0 65px 0 100px;
+    margin: 0 40px 0 90px;
     float: left;
-    overflow: hidden;
 }
 .content_con_w_2>ul>li{
     margin-top: 8px;
@@ -94,10 +95,9 @@ body{
 }
 /*正文下部分(图片)*/
 #content_bottom{
-    width: 75%;
-    margin: auto;
-    float: left;
     overflow: hidden;
+    float: left;
+    margin-left: 230px;
 }
 /*右侧大图*/
 .content_bottom_left{
@@ -105,7 +105,6 @@ body{
     width: 480px;
     float: left;
     margin: 0 3px 5px 5px;
-    /*margin-left: 20px;*/
     overflow: hidden;
 }
 /*左侧整体加四个小图*/
@@ -130,12 +129,11 @@ body{
 #content_bottom_1{
     float: left;
     overflow: hidden;
-    width: 75%;
-    margin: auto;
+    margin-left: 230px;
 }
 /*右侧俩小图*/
 .content_bottom_1_right{
-    width: 275px;
+    width: 278px;
     margin: 0 3px 0 5px;
     float: left;
     overflow: hidden;
@@ -152,7 +150,48 @@ body{
 .content_bottom_1_right_2 h2{
     width: 480px;
     background-color: darkgray;
-    color: coral;
+    color: white;
     text-align: center;
     margin: 8px 0 3px 0;
+}
+/*地图*/
+.map{
+    margin-left: 230px;
+    width: 1065px;
+    float: left;
+    overflow: hidden;
+}
+.map img{
+    height: 350px;
+}
+/*底部*/
+#bottom{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background-color: #666666;
+    float: left;
+    overflow: hidden;
+}
+/*底部上*/
+.bottom_top{
+    overflow: hidden;
+}
+.bottom_top_left{
+    margin: 0 50px 0 200px;
+    width: 180px;
+    color: white;
+    float: left;
+}
+.bottom_top_left_1{
+    width: 180px;
+    color: white;
+    float: left;
+    margin-left: 60px;
+}
+/*底部下*/
+.bottom_bottom{
+    color: white;
+    text-align: center;
+    margin-bottom: 18px;
 }
