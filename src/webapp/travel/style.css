@@ -1,18 +1,25 @@
 body{
-    margin: 0px;
+    margin: 0 auto;
+}
+#content{
+    margin: 0 auto;
+    overflow: hidden;
 }
 /*正文头部*/
 #content_top{
     margin: auto;
     width: 90%;
-    background-color: lightgray;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    overflow: hidden;
 }
 /*内部字*/
 #content_top_p1{
     font-size: 25px;
     color: lightslategray;
-    margin-left: 30px;
-    padding: 18px 0 0 80px;
+    margin-left: 20px;
+    padding: 8px 0 0 80px;
 }
 #content_top_p2{
     font-size: 17px;
@@ -22,19 +29,19 @@ body{
 }
 /*正文中间部分文字和图片*/
 .content_con_d{
-    margin: 8px auto;
+    float: left;
+    margin: 5px auto;
     overflow: hidden;
-    width: 76%;
+    width: 75%;
 }
 /*左侧文字*/
 .content_con_d_left{
-    width: 440px;
-    height: 210px;
+    width: 410px;
+    height: 200px;
     float: left;
     margin-right: 20px;
     text-align: center;
-    margin-top: 5px;
-    background-color: floralwhite;
+    background-color: ghostwhite;
     padding: 30px;
 }
 .content_con_d_left a{
@@ -49,45 +56,103 @@ body{
 }
 /*右侧三个图片*/
 .content_con_d_right{
-    width: 610px;
+    width: 570px;
     float: left;
     overflow: hidden;
 }
 /*大图*/
 .content_con_d_right_l{
-    width: 385px;
+    width: 360px;
     float: left;
     margin-right: 5px;
 }
 /*两小图*/
 .content_con_d_right_r{
-    width: 210px;
+    width: 205px;
     float: left;
 }
 .content_con_d_right_r_1{
     margin-bottom: 5px;
 }
+/*正文下文字*/
+#content_con_w{
+    width: 90%;
+    margin: auto;
+    float: left;
+    overflow: hidden;
+}
+.content_con_w_1{
+    color: coral;
+    margin: 0 65px 0 100px;
+    float: left;
+    overflow: hidden;
+}
+.content_con_w_2>ul>li{
+    margin-top: 8px;
+    list-style-type: none;
+    float: left;
+}
 /*正文下部分(图片)*/
 #content_bottom{
-    width: 80%;
+    width: 75%;
     margin: auto;
+    float: left;
     overflow: hidden;
 }
 /*右侧大图*/
 .content_bottom_left{
-    width: 550px;
+    height: 320px;
+    width: 480px;
     float: left;
-    margin: 5px;
+    margin: 0 3px 5px 5px;
+    /*margin-left: 20px;*/
     overflow: hidden;
 }
 /*左侧整体加四个小图*/
 .content_bottom_right{
-    width: 600px;
+    margin: 0 3px 5px 5px;
+    width: 560px;
+    float: left;
+    overflow: hidden;
+}
+.content_bottom_right_top{
+    width: 270px;
+    margin-left: 8px;
+    float: left;
+    overflow: hidden;
+}
+.content_bottom_right_top_1{
+    margin-left: 8px;
+    width:270px;
     float: left;
 }
-.content_bottom_right_1{
-    width: 295px;
-    margin: 5px;
+/*正文下部分二（图片）*/
+#content_bottom_1{
+    float: left;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+}
+/*右侧俩小图*/
+.content_bottom_1_right{
+    width: 275px;
+    margin: 0 3px 0 5px;
+    float: left;
+    overflow: hidden;
+}
+.content_bottom_1_right_1{
+    margin: 0 2px 0 0;
+}
+/*中间大图*/
+.content_bottom_1_right_2{
+    width: 485px;
+    margin: 0 2px 0 5px;
     float: left;
 }
-
+.content_bottom_1_right_2 h2{
+    width: 480px;
+    background-color: darkgray;
+    color: coral;
+    text-align: center;
+    margin: 8px 0 3px 0;
+}
