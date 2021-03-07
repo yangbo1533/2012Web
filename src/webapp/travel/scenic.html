@@ -8,6 +8,36 @@
 <body>
 <!--正文-->
 <div id="content">
+    <!--首页-->
+    <div id="header">
+        <div class="header_top">
+            <h1>驴友网</h1>
+        </div>
+        <!--导航栏-->
+        <div class="header_top_right">
+            <ul>
+                <li><a href="" style="text-decoration: none">首页</a></li>
+                <li><a href="" style="text-decoration: none">全部</a></li>
+                <li><a href="" style="text-decoration: none">目的地</a></li>
+                <li><a href="" style="text-decoration: none">旅游攻略</a></li>
+                <li><a href="" style="text-decoration: none">订酒店</a></li>
+                <li><a href="" style="text-decoration: none">APP</a></li>
+            </ul>
+        </div>
+        <!--首页照片-->
+        <div id="header_content">
+            <img src="photo/首页.jpg" alt="" width="100%" onclick="fn">
+            <p>来一场说走就走的旅行</p>
+        </div>
+        <!--首页下-->
+        <div id="header_bottom">
+            <div class="header_bottom_1"><img src="photo/a.jpeg" alt="" width="100%"></div>
+            <div class="header_bottom_1"><img src="photo/b.jpeg" alt="" width="100%"></div>
+            <div class="header_bottom_1"><img src="photo/c.jpeg" alt="" width="100%"></div>
+            <div class="header_bottom_1"><img src="photo/d.jpeg" alt="" width="100%"></div>
+            <div class="header_bottom_1"><img src="photo/e.jpeg" alt="" width="100%"></div>
+        </div>
+    </div>
     <!--正文头-->
     <div id="content_top">
         <p id="content_top_p1">景点概况</p>
@@ -197,5 +227,11 @@
         </div>
     </div>
 </div>
+
+<script id="d1">
+    function fn() {
+        header_content.innerHTML = "<img src='photo/首页2.jpg' width='100%'>";
+    }
+</script>
 </body>
 </html>

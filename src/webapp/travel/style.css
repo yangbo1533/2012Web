@@ -8,6 +8,49 @@
     margin: 0 auto;
     overflow: hidden;
 }
+/*首页头部*/
+#header{
+    width: 100%;
+    margin: 0 auto;
+}
+/*导航栏*/
+.header_top{
+    margin-left: 80px;
+    color: #666666;
+    float: left;
+    overflow: hidden;
+}
+.header_top_right ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 30px 10px 0 100px;
+    float: left;
+}
+/*首页照片*/
+#header_content{
+    width: 100%;
+    margin: auto;
+    float: left;
+    overflow: hidden;
+}
+#header_content p{
+    width: 100%;
+    color: darkorange;
+    font-size: 60px;
+    margin: 4px 0 4px 380px;
+}
+/*首页下*/
+#header_bottom{
+    width: 92%;
+    margin: 5px 0 0 65px;
+    float: left;
+    overflow: hidden;
+}
+.header_bottom_1{
+    width: 260px;
+    float: left;
+    margin-left: 10px;
+}
 /*正文头部*/
 #content_top{
     margin-left: 150px;
@@ -194,4 +237,11 @@
     color: white;
     text-align: center;
     margin-bottom: 18px;
+}
+
+/*点击事件照片*/
+#d1{
+    width: 100%;
+    margin: auto;
+    float: left;
 }
