@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="d1">
+<input type="button" value="按钮" id="d2">
+<div id="d3"></div>
+
+<!--引入JQuery框架-->
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    // //js动态绑定事件
+    // let d1 = document.getElementById(d1)
+    // d1.onclick = function(){
+    //
+    // }
+
+    //给按钮添加点击事件
+    //JQuery中的事件名和js中的事件名比较：去掉了on
+    $("#d1").click(function () {
+        // alert("按钮被点击了")
+        // let d3 = document.getElementById("d3")
+        // let d1 = document.getElementById("d1")
+        // d3.innerText = d1.value;
+        //等效上面三行代码
+        $("#d3").text($("#d1").val())
+        //document.getElementById("d1") 是js对象，表示文本框
+        //$("#d1") 是jq对象，也表示文本框
+    })
+</script>
+</body>
+</html>

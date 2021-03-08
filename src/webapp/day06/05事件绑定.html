@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" value="按钮一" onclick="fn1()">
+<input type="button" value="按钮二" id="d1">
+
+<script>
+    function fn1() {
+        alert("按钮1被点击了")
+    }
+    //通过js代码添加事件，也叫作动态绑定事件
+    d1.onclick = function () {
+        alert("按钮2被点击了")
+    }
+</script>
+</body>
+</html>

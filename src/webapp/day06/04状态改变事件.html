@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //页面加载完成事件
+        onload = function(){
+            d1.innerText = "内容被修改了"
+        }
+    </script>
+</head>
+<body>
+
+<div id="d1">测试</div>
+<!--onchange 值改变事件-->
+<select id="d2" onchange="chfn()" id="">  //下拉选
+    <option value="">熊瞎子</option>
+    <option value="">丹顶鹤</option>
+    <option value="">猴子</option>
+    <option value="">小鸡子</option>
+</select>
+<!--onblur 失去焦点事件（编辑完成事件点）-->
+<input type="text" id="d3" onblur="bfn()">
+<script>
+    function chfn() {
+        alert(d2.value); //弹出选中的值
+    }
+    function bfn() {
+        alert(d3.value); //弹出选中的值
+    }
+    //窗口尺寸改变事件
+    onresize = function () {
+        console.log("尺寸改变了")
+    }
+</script>
+</body>
+</html>
