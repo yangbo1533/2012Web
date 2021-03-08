@@ -1,8 +1,3 @@
-/*body{*/
-/*    width: 100%;*/
-/*    margin: 0 auto;*/
-/*}*/
-/*整个正文盒子*/
 #content{
     width: 100%;
     margin: 0 auto;
@@ -12,18 +7,23 @@
 #header{
     width: 100%;
     margin: 0 auto;
+    float: left;
 }
 /*导航栏*/
 .header_top{
-    margin-left: 80px;
+    margin-left: 65px;
     color: #666666;
     float: left;
     overflow: hidden;
 }
+.header_top h1{
+    float: left;
+    margin: 0 8px 0 10px;
+}
 .header_top_right ul li{
     list-style-type: none;
     text-decoration: none;
-    margin: 30px 10px 0 100px;
+    margin: 0px 10px 0 80px;
     float: left;
 }
 /*首页照片*/
@@ -33,27 +33,21 @@
     float: left;
     overflow: hidden;
 }
-#header_content p{
-    width: 100%;
-    color: darkorange;
-    font-size: 60px;
-    margin: 4px 0 4px 380px;
-}
 /*首页下*/
 #header_bottom{
     width: 95%;
-    margin: 5px 0 0 65px;
+    margin: 5px 0 0 240px;
     float: left;
     overflow: hidden;
 }
 .header_bottom_1{
-    width: 240px;
+    width: 180px;
     float: left;
     margin-left: 10px;
 }
 /*正文头部*/
 #content_top{
-    margin-left: 150px;
+    margin-left: 120px;
     float: left;
     overflow: hidden;
 }
@@ -71,7 +65,7 @@
 }
 /*正文中间部位*/
 .content_con{
-    margin-left: 230px;
+    margin-left: 190px;
     float: left;
     overflow: hidden;
 }
@@ -123,7 +117,7 @@
 /*正文下文字*/
 #content_con_w{
     width: 100%;
-    margin-left: 150px;
+    margin-left: 110px;
     float: left;
 }
 .content_con_w_1{
@@ -140,9 +134,9 @@
 #content_bottom{
     overflow: hidden;
     float: left;
-    margin-left: 230px;
+    margin-left: 185px;
 }
-/*右侧大图*/
+/*左侧大图*/
 .content_bottom_left{
     height: 320px;
     width: 480px;
@@ -150,21 +144,23 @@
     margin: 0 3px 5px 5px;
     overflow: hidden;
 }
-/*左侧整体加四个小图*/
+/*右侧整体加四个小图*/
 .content_bottom_right{
-    margin: 0 3px 5px 5px;
+    margin: 0 5px 5px 5px;
     width: 560px;
     float: left;
     overflow: hidden;
 }
 .content_bottom_right_top{
     width: 270px;
-    margin-left: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
     float: left;
     overflow: hidden;
 }
 .content_bottom_right_top_1{
-    margin-left: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
     width:270px;
     float: left;
 }
@@ -172,7 +168,7 @@
 #content_bottom_1{
     float: left;
     overflow: hidden;
-    margin-left: 230px;
+    margin-left: 185px;
 }
 /*右侧俩小图*/
 .content_bottom_1_right{
@@ -199,7 +195,7 @@
 }
 /*地图*/
 .map{
-    margin-left: 230px;
+    margin-left: 185px;
     width: 1065px;
     float: left;
     overflow: hidden;
@@ -210,7 +206,7 @@
 /*底部*/
 #bottom{
     width: 100%;
-    height: 200px;
+    height: 220px;
     margin: auto;
     background-color: #666666;
     float: left;
@@ -221,7 +217,7 @@
     overflow: hidden;
 }
 .bottom_top_left{
-    margin: 0 50px 0 200px;
+    margin: 0 50px 0 155px;
     width: 180px;
     color: white;
     float: left;
