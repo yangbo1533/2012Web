@@ -36,7 +36,7 @@
     $("li>ul").hide();
     //给第一层li添加一个点击事件
     $("body>ul>li").click(function () {
-        $(this).children().toggle(); //得到点击li里面的ul，并且先将this装换成为jq对象，获取里面的所有子元素
+        $(this).children().toggle(); //得到点击li里面的ul，并且先将this转换成为jq对象，获取里面的所有子元素
         $(this).siblings().children().hide(); //得到点击前的li的两个兄弟li里面的ul，让其隐藏
     })
 

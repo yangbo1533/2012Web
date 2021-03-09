@@ -1,5 +1,5 @@
 #content{
-    width: 100%;
+    width: 1500px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -35,8 +35,8 @@
 }
 /*首页下*/
 #header_bottom{
-    width: 95%;
-    margin: 5px 0 0 240px;
+    width: 90%;
+    margin: 5px 0 0 265px;
     float: left;
     overflow: hidden;
 }
@@ -45,13 +45,11 @@
     float: left;
     margin-left: 10px;
 }
-
-
 /*首页下照片墙*/
 #m_bo2{
-    width: 100%;
-    height: 800px;
-    margin: auto;
+    width: 80%;
+    height: 600px;
+    margin-left: 95px;
     overflow: hidden;
     background-image: url("photo/背景1.jpg");
     background-size: cover;
@@ -59,16 +57,14 @@
 #m_bot{
     width: 250px;
     height: 250px;
-    margin: 380px 700px;
+    margin: 240px 400px 300px 480px;
     overflow-y: scroll;
     padding-right: 30px;
     line-height: 24px;
 }
-
-
 /*正文头部*/
 #content_top{
-    margin-left: 120px;
+    margin-left: 150px;
     float: left;
     overflow: hidden;
 }
@@ -86,7 +82,7 @@
 }
 /*正文中间部位*/
 .content_con{
-    margin-left: 190px;
+    margin-left: 240px;
     float: left;
     overflow: hidden;
 }
@@ -138,7 +134,7 @@
 /*正文下文字*/
 #content_con_w{
     width: 100%;
-    margin-left: 110px;
+    margin-left: 140px;
     float: left;
 }
 .content_con_w_1{
@@ -155,7 +151,7 @@
 #content_bottom{
     overflow: hidden;
     float: left;
-    margin-left: 185px;
+    margin-left: 230px;
 }
 /*左侧大图*/
 .content_bottom_left{
@@ -189,7 +185,7 @@
 #content_bottom_1{
     float: left;
     overflow: hidden;
-    margin-left: 185px;
+    margin-left: 230px;
 }
 /*右侧俩小图*/
 .content_bottom_1_right{
@@ -216,7 +212,7 @@
 }
 /*地图*/
 .map{
-    margin-left: 185px;
+    margin-left: 230px;
     width: 1065px;
     float: left;
     overflow: hidden;
@@ -235,10 +231,11 @@
 }
 /*底部上*/
 .bottom_top{
+    margin: auto;
     overflow: hidden;
 }
 .bottom_top_left{
-    margin: 0 50px 0 155px;
+    margin: 0 50px 0 200px;
     width: 180px;
     color: white;
     float: left;

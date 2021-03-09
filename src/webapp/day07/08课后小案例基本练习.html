@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>男人
+        <ul>
+            <li>小男孩</li>
+            <li>老男孩</li>
+            <li>男人</li>
+        </ul>
+    </li>
+    <li>女人
+        <ul>
+            <li>小女人</li>
+            <li>女孩</li>
+            <li>性感女人</li>
+        </ul>
+    </li>
+    <li>儿童
+        <ul>
+            <li>一岁的</li>
+            <li>二岁的</li>
+            <li>五岁以下的</li>
+        </ul>
+    </li>
+</ul>
+
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //选中第二层ul让其进行隐藏
+    $("li>ul").hide();
+    //给第一层li添加点击事件
+    $("body>ul>li").click(function () {
+        $(this).children().toggle(); //获取所有子元素并进行转换成为jq对象
+        $(this).siblings().children().hide();
+    })
+</script>
+</body>
+</html>
