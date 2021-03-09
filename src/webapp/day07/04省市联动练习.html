@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<select>
+    <option>请选择</option>
+    <option value="0">北京</option>
+    <option value="1">上海</option>
+    <option value="2">沈阳</option>
+</select>
+<select>请选择</select>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    let arr = [["山东","唐山","石家庄"],
+            ["青岛","菏泽","大理"],
+            ["沈阳","东城","朝阳"]];
+    //给第一个下拉选添加值改变事件
+    $("select:first").change(function () {
+        //替换原来的内容为请选择（起到一个清空的作用）
+        $("select:last").html("<option>请选择</option>");
+
+        //通过点击省份得到的下标，去除数组中对应的城市数组
+        let cities = arr[this.value];
+        //遍历城市数组
+        for (let i=0; i<cities.length; i++){
+            let name = cities[i]; //取出明一个城市名
+            let o = $("<option></option>"); //创建option
+            o.text(name); //把城市名装进option
+            //把option装进第二个下拉选项中
+            $("select:last").append(o);
+        }
+
+    });
+</script>
+
+</body>
+</html>

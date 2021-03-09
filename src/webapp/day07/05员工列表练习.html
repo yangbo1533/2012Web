@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" placeholder="员工姓名">
+<input type="text" placeholder="工作">
+<input type="text" placeholder="工资">
+<input type="button" value="添加">
+<hr>
+<table border="1">
+    <caption>员工列表</caption>
+    <tr>
+        <th>姓名</th>
+        <th>工作</th>
+        <th>工资</th>
+        <th>操作</th>
+    </tr>
+</table>
+
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //给按钮添加点击事件
+    $("input:last").click(function () {
+        //在事件上创建一个tr和四个td
+        let tr = $("<tr></tr>");
+        let name = $("<td></td>");
+        let obj = $("<td></td>");
+        let salary = $("<td></td>");
+        let del = $("<td><input type='button' value='删除'></td>");
+        //通过删除按钮他爸td添加点击事件
+        del.children().click(function () {
+            tr.remove();
+        })
+        //给3个td添加用户输入的内容，最后一个td添加删除键
+        name.text($("input:eq(0)").val());
+        obj.text($("input:eq(1)").val());
+        salary.text($("input:eq(2)").val());
+        //把四个td装进tr
+        tr.append(name);
+        tr.append(obj);
+        tr.append(salary);
+        tr.append(del);
+        //最后把tr装进table
+        $("table").append(tr);
+    })
+
+    // //给按钮添加点击事件
+    // $("input:last").click(function () {
+    //     //在事件方法中创建一个tr和四个td
+    //     let tr = $("<tr></tr>");
+    //     let name = $("<td></td>");
+    //     let job = $("<td></td>");
+    //     let salary = $("<td></td>");
+    //     let del = $("<td><input type='button' value='删除'></td>");
+    //     //通过按钮他爸td进行添加点击事件
+    //     del.children().click(function () {
+    //         //删除当前行
+    //         tr.remove();
+    //     })
+    //     //给3个td添加用户输入的内容，第四个td添加删除按钮
+    //     name.text($("input:eq(0)").val());
+    //     job.text($("input:eq(1)").val());
+    //     salary.text($("input:eq(2)").val());
+    //     //把四个td装进tr内
+    //     tr.append(name);
+    //     tr.append(job);
+    //     tr.append(salary);
+    //     tr.append(del);
+    //     //最后把tr装进table
+    //     $("table").append(tr);
+    // })
+</script>
+</body>
+</html>

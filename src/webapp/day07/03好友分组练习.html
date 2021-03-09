@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>同事
+        <ul>
+            <li>一一</li>
+            <li>二二</li>
+            <li>三三</li>
+        </ul>
+    </li>
+    <li>亲戚
+        <ul>
+            <li>四</li>
+            <li>五</li>
+            <li>六</li>
+        </ul>
+    </li>
+    <li>同学
+        <ul>
+            <li>七</li>
+            <li>八</li>
+            <li>九</li>
+        </ul>
+    </li>
+</ul>
+
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //选中第二层的ul并且让其进行隐藏
+    $("li>ul").hide();
+    //给第一层li添加一个点击事件
+    $("body>ul>li").click(function () {
+        $(this).children().toggle(); //得到点击li里面的ul，并且先将this装换成为jq对象，获取里面的所有子元素
+        $(this).siblings().children().hide(); //得到点击前的li的两个兄弟li里面的ul，让其隐藏
+    })
+
+    // //选中第二层的ul并且让其进行隐藏
+    // $("li>ul").hide();
+    // //给第一层li添加点击事件
+    // $("body>ul>li").click(function () {
+    //     //得到点击li里面的ul
+    //     //在事件方法中 this代表的是事件源（触发事件的元素）this是js对象
+    //     //先将this转换成jq对象，获取里面的子元素（就是ul）
+    //     $(this).children().toggle();
+    //     //得到点击前的li的两个兄弟li里面的ul，让其隐藏
+    //     $(this).siblings().children().hide();
+    // })
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
+
+<h2></h2>
+<h3></h3>
+<h4></h4>
+
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    // //创建一个标签
+    // let h = $("<h1>我是H1</h1>")
+    // //将h添加到页面后面
+    // $("body").append(h);
+    // //添加到页面最前面
+    // $("body").prepend(h);
+
+    let h3 = $("<h5>我是新来的</h5>");
+    //插入到h3前面
+    //$("h3").before(h5);
+    //插入到h3后面
+    $("h3").after(h5);
+    //删除元素
+    $("h4").remove();
+</script>
+</body>
+</html>
