@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bootstrap Template</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="../bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css"/>
+  <style>
+    div>div{
+      border: #3e8f3e solid 3px;
+    }
+  </style>
+</head>
+<body>
+<!--使用栅格系统时需要先创建行元素-->
+  <div class="row">
+    <div class="col=md-6">占六列</div>
+    <div class="col=md-6">占六列</div>
+  </div>
+<div>
+  <div class="col-md-8">占八列</div>
+  <div class="col-md-8">占八列</div>
+  <div class="col-md-4">占四列</div>
+</div>
+<!--居中：通过container容器实现居中-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">占六列</div>
+    <div class="col-md-6">占六列</div>
+  </div>
+</div>
+
+<!--一行1 2 3三部分-->
+<div class="row">
+  <div class="col-md-2">占两行</div>
+  <div class="col-md-4">占四行</div>
+  <div class="col-md-6">占六行</div>
+</div>
+
+<!--1 2 1-->
+<div class="row">
+  <div class="col-md-3">三</div>
+  <div class="col-md-6">六</div>
+  <div class="col-md-3">三</div>
+</div>
+
+<!--3 2 2 3 2-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<h3>列便宜</h3>
+<div class="row">
+  <div class="col-md-6 col-md-offset-4">六</div>
+</div>
+
+</body>
+<script type="text/javascript" src="../bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/respond.min.js"></script>
+</html>
